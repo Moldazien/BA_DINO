@@ -163,7 +163,7 @@ if __name__ == '__main__':
         print(f"Provided image path {args.image_path} is non valid.")
         sys.exit(1)
     transform = pth_transforms.Compose([
-        pth_transforms.Resize(args.image_size),
+        #pth_transforms.Resize(args.image_size),
         pth_transforms.ToTensor(),
         pth_transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
     ])
