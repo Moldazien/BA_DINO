@@ -10,8 +10,8 @@ import humanfriendly
 import numpy as np
 from tqdm import tqdm
 
-from ct_utils import truncate_float
-import visualization.visualization_utils as viz_utils
+from CameraTraps.ct_utils import truncate_float #is in CameraTraps folder
+#import visualization.visualization_utils as viz_utils  #removed cause not needed
 
 # ignoring all "PIL cannot read EXIF metainfo for the images" warnings
 warnings.filterwarnings('ignore', '(Possibly )?corrupt EXIF data', UserWarning)
